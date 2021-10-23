@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript" src="formatter.js"></script>
+    <label for="story">Unformatted</label>
+    <textarea id="unformatted" name="unformatted" rows="5" cols="50" autofocus>Put URLs here....
+    </textarea>
+    <br>
+    <br>
+    <label for="story">Formatted</label>
+    <textarea id="formatted" name="formatted" rows="5" cols="50" readonly>
+    </textarea>
+    <br>
+    <br>
+    <button name='format_btn' id='format_btn' onclick="format_urls()">Format</button>
+    <button name='copy' id='copy' onclick="copy_text()">Copy Text</button>
+</body> 
+</html>
