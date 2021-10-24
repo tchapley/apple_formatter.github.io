@@ -18,7 +18,7 @@ function format_urls() {
         }
     }
 
-    var output = formatted_list.join(',')
+    var output = formatted_list.join('\n')
     
     formatted.value = output
 }
