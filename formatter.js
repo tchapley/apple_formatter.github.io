@@ -3,15 +3,21 @@ function format_urls() {
     var unformatted = document.getElementById('unformatted')
     var formatted = document.getElementById('formatted')
 
-    var unformatted_list = unformatted.value.split(',')
+    var unformatted_lines = unformatted.value.split('\n')
     var formatted_list = []
-    
-    for (url in unformatted_list) {
-        var main_url = unformatted_list[url].split('?')[0]
-        
-        formatted_list.push(main_url + '?ls=1&app=itunes')
+    for (lines in unformatted_lines) {
+        var unformatted_line = unformatted_lines[lines].split(' ')
+        console.log(unformatted_line)
+        for (item in unformatted_line) {
+            if (unformatted_line[item].includes('music.apple.com')) {
+                var main_url = unformatted_line[item].split('?')[0]
+                console.log(main_url)
+                
+                formatted_list.push(main_url + '?ls=1&app=itunes')
+            }
+        }
     }
-    
+
     var output = formatted_list.join(',')
     
     formatted.value = output
