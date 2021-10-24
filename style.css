@@ -8,7 +8,6 @@ body {
 #grid {
     width: 1200px;
     margin: auto;
-    border: 3px solid #4287f5;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: 25px auto 25px;
