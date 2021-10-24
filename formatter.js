@@ -7,11 +7,9 @@ function format_urls() {
     var formatted_list = []
     for (lines in unformatted_lines) {
         var unformatted_line = unformatted_lines[lines].split(' ')
-        console.log(unformatted_line)
         for (item in unformatted_line) {
             if (unformatted_line[item].includes('music.apple.com')) {
                 var main_url = unformatted_line[item].split('?')[0]
-                console.log(main_url)
                 
                 formatted_list.push(main_url + '?ls=1&app=itunes')
             }
