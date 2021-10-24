@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <script type="text/javascript" src="formatter.js"></script>
-    <label for="story">Unformatted</label>
-    <textarea id="unformatted" name="unformatted" rows="5" cols="50" autofocus>Put URLs here....
-    </textarea>
-    <br>
-    <br>
-    <label for="story">Formatted</label>
-    <textarea id="formatted" name="formatted" rows="5" cols="50" readonly>
-    </textarea>
-    <br>
-    <br>
-    <button name='format_btn' id='format_btn' onclick="format_urls()">Format</button>
-    <button name='copy' id='copy' onclick="copy_text()">Copy Text</button>
+    <div id="grid">
+        <label for="unformatted" class='grid-item'>Unformatted</label>
+        <label for="formatted" class='grid-item'>Formatted</label>
+        <textarea id="unformatted" name="unformatted" class='grid-item' rows="5" cols="50" autofocus>Put URLs here....
+        </textarea>
+        <textarea id="formatted" name="formatted" class='grid-item' rows="5" cols="50" readonly>
+        </textarea>
+        <button name='format_btn' id='format_btn' class='grid-item' onclick="format_urls()">Format</button>
+        <button name='copy' id='copy' class='grid-item' onclick="copy_text()">Copy Text</button>
+    </div>
 </body> 
 </html>
